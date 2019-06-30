@@ -1,0 +1,24 @@
+{
+  "name": "inisiasi-fti",
+  "description": "Tema untuk web inisiasi FTI UAJY 2019",
+  "author": "Muldok Inisiasi",
+  "private": true,
+  "scripts": {
+    "unch": "grunt"
+  },
+  "devDependencies": {
+    "grunt": "^1.0.4",
+    "grunt-browser-sync": "^2.2.0",
+    "grunt-cli": "^1.3.2",
+    "grunt-contrib-cssmin": "^3.0.0",
+    "grunt-contrib-sass": "^1.0.0",
+    "grunt-contrib-watch": "^1.1.0",
+    "grunt-sass": "^3.0.2",
+    "load-grunt-tasks": "^5.0.0",
+    "node-sass": "^4.12.0",
+    "prettier": "^1.18.2"
+  },
+  "dependencies": {
+    "bulma": "^0.7.5"
+  }
+}

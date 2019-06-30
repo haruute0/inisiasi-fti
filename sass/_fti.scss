@@ -1,0 +1,27 @@
+.site-footer
+{
+    padding: 50px;
+    padding-right: 0;
+    padding-left: 0;
+    background-color: rgb(19, 19, 19);
+    font-size: 1em;
+
+    .site-info-footer {
+        text-align: center;
+        color: white;
+        margin: auto 20px;
+    }
+
+    .footer-c-logo {
+        max-width: 150px;
+        margin: 0 auto;
+        margin-bottom: 20px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .site-footer
+    {
+        font-size: 3.5vw;
+    }
+}
