@@ -51,6 +51,7 @@ Nicolas Gallagher and Jonathan Neal https://necolas.github.io/normalize.css/
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Fjalla+One&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -844,9 +845,56 @@ object {
     margin: 0 auto;
     margin-bottom: 20px; }
 
+.site-header {
+  padding: 50px 100px;
+  background-color: aqua;
+  min-height: 70vh; }
+
+.header-branding {
+  display: flex; }
+  .header-branding .header-image {
+    max-width: 200px;
+    margin-right: auto; }
+  .header-branding .header-lembaga-logo {
+    display: flex;
+    float: right; }
+    .header-branding .header-lembaga-logo--entity {
+      max-width: 60px;
+      margin: 10px; }
+
 @media only screen and (max-width: 600px) {
   .site-footer {
-    font-size: 3.5vw; } }
+    font-size: 3.5vw; }
+  .header-branding {
+    padding: 50px 10px; }
+  .site-header {
+    padding: 50px 0;
+    background-color: #85bbbb;
+    min-height: 70vh; } }
+
+@media only screen and (max-width: 850px) {
+  .header-branding {
+    margin: auto;
+    display: block; }
+    .header-branding .header-image {
+      max-width: 200px;
+      margin: auto; }
+    .header-branding .header-lembaga-logo {
+      display: flex;
+      float: none;
+      margin: auto;
+      margin-top: 20px;
+      max-width: 300px; }
+      .header-branding .header-lembaga-logo--entity {
+        max-width: 40px; } }
+
+.selamat-datang {
+  font-family: 'Fjalla One', sans-serif;
+  font-size: 4em;
+  margin: 50px;
+  text-align: center;
+  line-height: 1em;
+  color: #00728f; }
 
 /*---- EOF ----*/
 

@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One&display=swap');
+
 .site-footer
 {
     padding: 50px;
@@ -19,9 +21,79 @@
     }
 }
 
+.site-header {
+    padding: 50px 100px;
+    background-color: aqua;
+    min-height: 70vh;
+}
+
+.header-branding {
+    display: flex;
+
+    .header-image {
+        max-width: 200px;
+        margin-right: auto;
+    }
+
+    .header-lembaga-logo {
+        display: flex;
+        float: right;
+        
+        &--entity {
+            max-width: 60px;
+            margin: 10px;
+        }
+    }
+}
+
 @media only screen and (max-width: 600px) {
+    
     .site-footer
     {
         font-size: 3.5vw;
     }
+
+    .header-branding {
+        padding: 50px 10px;
+    }
+
+    .site-header {
+        padding: 50px 0;
+        background-color: rgb(133, 187, 187);
+        min-height: 70vh;
+    }
+}
+
+@media only screen and (max-width: 850px) {
+
+    .header-branding {
+        margin: auto;
+        display: block;
+
+        .header-image {
+            max-width: 200px;
+            margin: auto;
+        }
+    
+        .header-lembaga-logo {
+            display: flex;
+            float: none;
+            margin: auto;
+            margin-top: 20px;
+            max-width: 300px;
+
+            &--entity {
+                max-width: 40px;
+            }
+        }
+    }
+}
+
+.selamat-datang {
+    font-family: 'Fjalla One', sans-serif;
+    font-size: 4em;
+    margin: 50px;
+    text-align: center;
+    line-height: 1em;
+    color: #00728f;
 }
